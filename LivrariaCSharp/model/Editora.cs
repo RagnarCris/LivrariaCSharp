@@ -15,8 +15,8 @@ namespace LivrariaCSharp.model
         }
         public Editora(int id, string nome)
         {
-            this.id = id;
-            this.nome = nome;
+            this.Id = id;
+            this.Nome = nome;
         }
 
         public int Id
@@ -33,7 +33,7 @@ namespace LivrariaCSharp.model
 
         public override string ToString()
         {
-            return this.nome;
+            return this.Nome;
         }
     }
 }
