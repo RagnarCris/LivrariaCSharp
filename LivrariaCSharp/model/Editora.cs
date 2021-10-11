@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LivrariaCSharp.model
 {
-    class Editora
+    public class Editora
     {
         private int id;
         private string nome;

@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\AcervoDAO.cs" />
+    <Compile Include="controller\Conexao.cs" />
+    <Compile Include="controller\EditoraDAO.cs" />
     <Compile Include="model\Acervo.cs" />
     <Compile Include="model\Editora.cs" />
     <Compile Include="view\FormAcervo.cs">
@@ -79,8 +82,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="controller\" />
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

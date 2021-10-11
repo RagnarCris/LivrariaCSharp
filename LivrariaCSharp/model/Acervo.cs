@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LivrariaCSharp.model
 {
-    class Acervo
+    public class Acervo
     {
         public int id { get; set; }
         public int id_editora { get; set; }
