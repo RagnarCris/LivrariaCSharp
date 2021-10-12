@@ -51,7 +51,7 @@ namespace LivrariaCSharp
             this.labelPreco = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.grid = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -263,13 +263,13 @@ namespace LivrariaCSharp
             this.label1.TabIndex = 23;
             this.label1.Text = "Pesquisar:";
             // 
-            // textBox1
+            // txtPesquisar
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.Location = new System.Drawing.Point(88, 320);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(745, 22);
-            this.textBox1.TabIndex = 22;
+            this.txtPesquisar.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtPesquisar.Location = new System.Drawing.Point(88, 320);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(745, 22);
+            this.txtPesquisar.TabIndex = 22;
             // 
             // btnPesquisar
             // 
@@ -303,7 +303,7 @@ namespace LivrariaCSharp
             this.Controls.Add(this.grid);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.labelPreco);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.labelAno);
@@ -356,7 +356,7 @@ namespace LivrariaCSharp
         private System.Windows.Forms.Label labelPreco;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.DataGridView grid;
     }
