@@ -18,5 +18,25 @@ namespace LivrariaCSharp
         {
             InitializeComponent();
         }
+
+        private void Novo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Editar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Salvar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
