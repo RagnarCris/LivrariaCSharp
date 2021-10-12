@@ -1,4 +1,6 @@
 ﻿using System;
+using LivrariaCSharp.controller;
+using LivrariaCSharp.model;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
