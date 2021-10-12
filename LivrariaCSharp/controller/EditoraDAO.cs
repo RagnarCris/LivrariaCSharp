@@ -17,12 +17,11 @@ namespace LivrariaCSharp.controller
         {
             try
             {
-                string sql = "SELECT* FROM editora ORDER BY id";
+                string sql = "SELECT * FROM editora ORDER BY id";
                 cmd = new MySqlCommand(sql, con);
                 MySqlDataReader dr = cmd.ExecuteReader();
 
-                List<Editora> lista = new
-                List<Editora>();
+                List<Editora> lista = new List<Editora>();
                 while (dr.Read())
                 {
                     Editora cat = new Editora();
