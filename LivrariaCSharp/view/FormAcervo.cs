@@ -21,8 +21,8 @@ namespace LivrariaCSharp
             txtId.Enabled = false;
             estadoControles(true);
             cbxEditora.DataSource = new EditoraDAO().listar();
-            cbxEditora.ValueMember = "Id";
-            cbxEditora.DisplayMember = "Nome";
+            cbxEditora.ValueMember = "id";
+            cbxEditora.DisplayMember = "nome";
             cbxEditora.SelectedIndex = 0;
             configurarTabela();
             preencherTabela(new AcervoDAO().listar());
