@@ -1,6 +1,7 @@
 ﻿using LivrariaCSharp.model;
 using MySql.Data.MySqlClient;
 using System;
+using System.Data;
 using System.Collections.Generic;
 
 namespace LivrariaCSharp.controller
@@ -127,20 +128,22 @@ namespace LivrariaCSharp.controller
             }
             finally { Conexao.Desconectar(con); }
         }
-        public List<Acervo> pesquisarPorNome(string titulo)
+        public List<Acervo> pesquisarPorTitulo(string titulo)
         {
             try
             {
+                //string sql = "SELECT * FROM acervo WHERE titulo LIKE '%" + titulo + "%' ORDER BY titulo";
                 string sql = "SELECT * FROM acervo WHERE titulo LIKE @p1 ORDER BY titulo";
                 cmd = new MySqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@p1", "%"+titulo+"%");
                 MySqlDataReader dr = cmd.ExecuteReader();
-                List<Acervo> lista = new List<Acervo>();
+                var lista = new List<Acervo>();
+                
                 while (dr.Read())
                 {
                     Acervo p = new Acervo();
                     p.Id = dr.GetInt32("id");
-                    p.Id_editora = dr.GetInt32("id_categoria");
+                    p.Id_editora = dr.GetInt32("id_editora");
                     p.Titulo = dr.GetString("titulo");
                     p.Autor = dr.GetString("autor");
                     p.Ano = dr.GetInt32("ano");
@@ -149,6 +152,7 @@ namespace LivrariaCSharp.controller
                     p.Tipo = dr.GetInt32("tipo");
                     lista.Add(p);
                 }
+                
                 return lista;
             }
             catch (Exception e)

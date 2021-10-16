@@ -139,7 +139,7 @@ namespace LivrariaCSharp
             }
             else
             {
-                preencherTabela(new AcervoDAO().pesquisarPorNome(txtPesquisar.Text));
+                preencherTabela(new AcervoDAO().pesquisarPorTitulo(txtPesquisar.Text));
             }
         }
 
