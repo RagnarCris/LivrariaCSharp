@@ -1,7 +1,6 @@
 ﻿using LivrariaCSharp.model;
 using MySql.Data.MySqlClient;
 using System;
-
 using System.Collections.Generic;
 
 namespace LivrariaCSharp.controller
@@ -104,12 +103,13 @@ namespace LivrariaCSharp.controller
                 string sql = "SELECT * FROM acervo ORDER BY id";
                 cmd = new MySqlCommand(sql, con);
                 MySqlDataReader dr = cmd.ExecuteReader();
-                List<Acervo> lista = new List<Acervo>();
+                //List<Acervo> lista = new List<Acervo>();
+                var lista = new List<Acervo>();
                 while (dr.Read())
                 {
                     Acervo p = new Acervo();
                     p.Id = dr.GetInt32("id");
-                    p.Id_editora = dr.GetInt32("id_categoria");
+                    p.Id_editora = dr.GetInt32("id_editora");
                     p.Titulo = dr.GetString("titulo");
                     p.Autor = dr.GetString("autor");
                     p.Ano = dr.GetInt32("ano");

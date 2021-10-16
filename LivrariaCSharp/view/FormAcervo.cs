@@ -17,7 +17,7 @@ namespace LivrariaCSharp
         public FormAcervo()
         {
             InitializeComponent();
-            this.Text = "livraria";
+            this.Text = "Livraria";
             txtId.Enabled = false;
             estadoControles(true);
             cbxEditora.DataSource = new EditoraDAO().listar();
@@ -148,7 +148,7 @@ namespace LivrariaCSharp
             grid.Columns.Add("id", "Id");
             grid.Columns.Add("titulo", "Titulo");
             grid.Columns.Add("autor", "Autor");
-            grid.Columns.Add("Editora", "Editora");
+            grid.Columns.Add("editora", "Editora");
             grid.Columns.Add("preco", "Preco");
             grid.Columns.Add("quantidade", "Qtde.");
             grid.Columns.Add("ano", "Ano");
@@ -163,7 +163,7 @@ namespace LivrariaCSharp
             grid.Columns[7].Width = 30;
             grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             grid.AllowUserToAddRows = false;
-            grid.AllowUserToDeleteRows = true; // Teste para possível exclusão
+            grid.AllowUserToDeleteRows = false; // Teste para possível exclusão
             grid.AllowUserToOrderColumns = false;
             grid.AllowUserToResizeColumns = false;
             grid.AllowUserToResizeRows = false;

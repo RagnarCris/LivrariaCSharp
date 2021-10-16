@@ -5,11 +5,12 @@ namespace LivrariaCSharp.controller
 {
     public class Conexao
     {
-        private static string DATABASE = "livraria;";
+        private static string DATABASE = "livraria";
         private static string HOST = "localhost";
         private static string USR = "root";
-        private static string PWD = "";
-        private static string URL = "server=" + HOST + ";UserId=" + USR + ";password=" + PWD + ";database=" + DATABASE;
+        private static string SSL = "SSL Mode=none;Certificate Store Location=CurrentUser;";
+        //private static string URL = "SERVER=" + HOST + ";UID=" + USR + ";PASSWORD=" + PWD + ";DATABASE=" + DATABASE;
+        private static string URL = "server=" + HOST + ";user=" + USR + ";" + SSL + "database = " + DATABASE;
 
         public static MySqlConnection Conectar()
         {
@@ -31,7 +32,10 @@ namespace LivrariaCSharp.controller
         {
             try
             {
-                con.Close();
+                if (con != null)
+                {
+                    con.Close();
+                }
             }
             catch (Exception e)
             {
