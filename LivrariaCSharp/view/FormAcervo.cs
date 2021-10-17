@@ -17,7 +17,7 @@ namespace LivrariaCSharp
         public FormAcervo()
         {
             InitializeComponent();
-            this.Text = "Livraria";
+            this.Text = "Controle de Acervos";
             txtId.Enabled = false;
             estadoControles(true);
             cbxEditora.DataSource = new EditoraDAO().listar();
