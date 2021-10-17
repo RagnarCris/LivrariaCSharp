@@ -163,7 +163,7 @@ namespace LivrariaCSharp
             grid.Columns[7].Width = 30;
             grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             grid.AllowUserToAddRows = false;
-            grid.AllowUserToDeleteRows = false; // Teste para possível exclusão
+            grid.AllowUserToDeleteRows = false;
             grid.AllowUserToOrderColumns = false;
             grid.AllowUserToResizeColumns = false;
             grid.AllowUserToResizeRows = false;
