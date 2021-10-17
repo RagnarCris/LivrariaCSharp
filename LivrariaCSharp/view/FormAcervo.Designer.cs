@@ -285,11 +285,11 @@ namespace LivrariaCSharp
             // grid
             // 
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid.Location = new System.Drawing.Point(10, 353);
+            this.grid.Location = new System.Drawing.Point(10, 367);
             this.grid.Name = "grid";
             this.grid.RowHeadersWidth = 51;
             this.grid.RowTemplate.Height = 24;
-            this.grid.Size = new System.Drawing.Size(902, 226);
+            this.grid.Size = new System.Drawing.Size(902, 323);
             this.grid.TabIndex = 25;
             // 
             // FormAcervo
