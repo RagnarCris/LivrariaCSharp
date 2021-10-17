@@ -154,8 +154,8 @@ namespace LivrariaCSharp
             grid.Columns.Add("ano", "Ano");
             grid.Columns.Add("tipo", "Tipo");
             grid.Columns[0].Width = 30;
-            grid.Columns[1].Width = 200;
-            grid.Columns[2].Width = 100;
+            grid.Columns[1].Width = 250;
+            grid.Columns[2].Width = 122;
             grid.Columns[3].Width = 70;
             grid.Columns[4].Width = 40;
             grid.Columns[5].Width = 40;
